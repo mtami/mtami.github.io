@@ -23,6 +23,14 @@ const skillGroups = [
   },
 ];
 
+const getAnimationDelay = (groupIndex: number, skillIndex: number) => {
+  return ((groupIndex * 0.3) + (skillIndex * 0.15)) % 2;
+};
+
+const getAnimationDuration = (index: number) => {
+  return 2.5 + (index % 3) * 0.5;
+};
+
 const SkillsSection = () => (
   <section id="skills" className="section-padding bg-card/50">
     <div className="max-w-5xl mx-auto">
@@ -48,13 +56,13 @@ const SkillsSection = () => (
               {group.title}
             </h3>
             <div className="flex flex-wrap gap-2">
-              {group.skills.map((skill) => (
+              {group.skills.map((skill, skillIdx) => (
                 <span
                   key={skill}
                   className="px-3 py-1.5 text-sm rounded-md bg-secondary text-secondary-foreground cursor-default transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:-translate-y-1 animate-float"
                   style={{
-                    animationDelay: `${Math.random() * 2}s`,
-                    animationDuration: `${3 + Math.random() * 2}s`,
+                    animationDelay: `${getAnimationDelay(i, skillIdx)}s`,
+                    animationDuration: `${getAnimationDuration(skillIdx)}s`,
                   }}
                 >
                   {skill}
