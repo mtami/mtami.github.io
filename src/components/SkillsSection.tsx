@@ -51,7 +51,11 @@ const SkillsSection = () => (
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="px-3 py-1.5 text-sm rounded-md bg-secondary text-secondary-foreground"
+                  className="px-3 py-1.5 text-sm rounded-md bg-secondary text-secondary-foreground cursor-default transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:-translate-y-1 animate-float"
+                  style={{
+                    animationDelay: `${Math.random() * 2}s`,
+                    animationDuration: `${3 + Math.random() * 2}s`,
+                  }}
                 >
                   {skill}
                 </span>
