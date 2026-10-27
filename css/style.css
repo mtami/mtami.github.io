@@ -252,6 +252,9 @@ main, .foot { position: relative; z-index: 2; }
 .papers a:hover { text-decoration-color: var(--mint); }
 .papers span { font-family: var(--display); font-size: var(--s-1); color: var(--haze); }
 
+.papers span .code { font-size: inherit; color: var(--mint); text-decoration: underline; text-decoration-color: rgba(126,214,200,.45); text-underline-offset: 3px; }
+.papers-more { margin: 1.4rem 0 0; font-family: var(--display); font-size: var(--s-1); }
+.papers-more a { color: var(--mint); text-underline-offset: 4px; }
 .stack { margin-top: 4rem; }
 .stack dl { margin: 0; }
 .stack div { display: grid; grid-template-columns: 6rem 1fr; gap: 1rem; padding: 0.7rem 0; border-top: 1px solid var(--line); }
