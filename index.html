@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mo Tami — Senior AI Lead</title>
+  <meta name="description" content="Mo Tami is a Senior AI Lead with 11+ years building production AI: RAG, AI agents, LLM systems and multimodal research. Open to relocation." />
+  <meta name="theme-color" content="#14122B" />
+  <meta property="og:title" content="Mo Tami — Senior AI Lead" />
+  <meta property="og:description" content="AI systems that leave the lab: RAG, agents, matching engines and multimodal models running in production." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.js" } }
+  </script>
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="mark" href="#top" aria-label="Mo Tami, back to top">mo<span>/</span>tami</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#path">Path</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" data-state="0" aria-labelledby="hero-title">
+      <p class="hero-kicker">Senior AI Lead, based in Rawabi, Palestine. Open to relocation.</p>
+      <h1 id="hero-title" class="hero-title">
+        <span class="line">Mo Tami</span>
+      </h1>
+      <p class="hero-lede">
+        I build AI that leaves the lab. Eleven years of shipping software,
+        the last several turning LLMs, retrieval and multimodal research into
+        systems people rely on every day.
+      </p>
+      <ul class="hero-links">
+        <li><a class="btn btn-solid" href="#work">See the work</a></li>
+        <li><a class="btn" href="assets/Mo-Tami-CV.pdf" download>Download CV</a></li>
+      </ul>
+      <p class="hero-hint" aria-hidden="true">Every point in this field is a sample in a latent space. Scroll, and it reorganises.</p>
+    </section>
+
+    <!-- NUMBERS -->
+    <section class="facts" aria-label="At a glance">
+      <dl>
+        <div><dt>Years building software</dt><dd>11+</dd></div>
+        <div><dt>Production ML services supported</dt><dd>15+</dd></div>
+        <div><dt>Peer-reviewed &amp; preprint papers</dt><dd>5+</dd></div>
+        <div><dt>Hours of AI adoption consulting</dt><dd>100+</dd></div>
+      </dl>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="block" data-state="1" aria-labelledby="work-title">
+      <div class="block-head">
+        <h2 id="work-title">Selected work</h2>
+        <p>Products where I owned the AI layer, from architecture to the model in production. Point at a project to find its cluster in the field.</p>
+      </div>
+
+      <ol class="projects" role="list">
+        <li class="project" data-cluster="0">
+          <div class="project-top">
+            <h3><a href="https://mentorsphere.io/" target="_blank" rel="noopener">MentorSphere</a></h3>
+            <span class="project-domain">mentorsphere.io</span>
+          </div>
+          <p class="project-what">A platform that connects professionals with the mentors who fit them.</p>
+          <p class="project-mine">I built the AI layer: resume parsing into structured profiles, mentor matching, and the ranking that decides who you see first.</p>
+          <ul class="tags"><li>Resume parsing</li><li>Matching</li><li>Ranking</li><li>LLMs</li></ul>
+        </li>
+
+        <li class="project" data-cluster="1">
+          <div class="project-top">
+            <h3><a href="https://jobmatch.ps/" target="_blank" rel="noopener">JobMatch.ps</a></h3>
+            <span class="project-domain">jobmatch.ps</span>
+          </div>
+          <p class="project-what">A national job-matching platform for Palestine.</p>
+          <p class="project-mine">I architected, designed and built job classification and structured-output extraction, the foundation of its AI matching and recommendation engine. Delivered across teams with the Ministry of Labour (Palestinian Authority) and leading European AI companies.</p>
+          <ul class="tags"><li>System architecture</li><li>Classification</li><li>Structured extraction</li><li>Recommendation</li></ul>
+        </li>
+
+        <li class="project" data-cluster="2">
+          <div class="project-top">
+            <h3><a href="https://propertybasha.com/" target="_blank" rel="noopener">PropertyBasha</a></h3>
+            <span class="project-domain">propertybasha.com</span>
+          </div>
+          <p class="project-what">A property marketplace with user-generated listings and messages.</p>
+          <p class="project-mine">I architected and built the machine-learning hate speech detection that keeps the platform's content safe.</p>
+          <ul class="tags"><li>NLP</li><li>Content moderation</li><li>Text classification</li></ul>
+        </li>
+
+        <li class="project" data-cluster="3">
+          <div class="project-top">
+            <h3><a href="https://redzapp.com/" target="_blank" rel="noopener">Redz</a></h3>
+            <span class="project-domain">redzapp.com</span>
+          </div>
+          <p class="project-what">A short-video social app serving millions of users worldwide.</p>
+          <p class="project-mine">I built the ML/AI feedback loop for its recommendation system, so what people watch keeps improving what they're shown next.</p>
+          <ul class="tags"><li>Recommender systems</li><li>Feedback loops</li><li>Scale</li></ul>
+        </li>
+
+        <li class="project" data-cluster="4">
+          <div class="project-top">
+            <h3>AI adoption consulting &amp; training</h3>
+            <span class="project-domain">100+ hours</span>
+          </div>
+          <p class="project-what">Helping teams move from AI curiosity to AI in production.</p>
+          <p class="project-mine">Over a hundred hours of consultation and hands-on training on adopting AI and running a healthy software development life cycle around it.</p>
+          <ul class="tags"><li>Strategy</li><li>Training</li><li>SDLC</li></ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PATH -->
+    <section id="path" class="block" data-state="2" aria-labelledby="path-title">
+      <div class="block-head">
+        <h2 id="path-title">The path here</h2>
+        <p>From testing network drivers at Nvidia to leading AI engineering. Each step added a layer: systems, backends, data, then models.</p>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <span class="when">2022 – now</span>
+          <div>
+            <h3>Senior Lead AI Engineer <span class="where">Aurora Technologies, Apple Program</span></h3>
+            <p>Lead technical design for internal AI systems: RAG pipelines for enterprise knowledge retrieval and semantic search, and agentic workflows that orchestrate multi-step tasks. Tuning them for accuracy, latency and reliability in production.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2022</span>
+          <div>
+            <h3>Senior Data Engineer <span class="where">AUI, remote (US)</span></h3>
+            <p>Built the data platforms and deployment infrastructure behind 15+ production ML services on AWS. Made ETL and reporting over 40% faster with Spark and EMR, and automated model versioning and monitoring.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2020 – 2021</span>
+          <div>
+            <h3>Backend Engineer <span class="where">Harri, remote (US)</span></h3>
+            <p>Backend services for a large-scale HR platform used by enterprise customers. Up to 80% faster responses through distributed caching, query optimisation and architecture work.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2015 – 2018</span>
+          <div>
+            <h3>Software Engineer <span class="where">Nvidia, Rawabi</span></h3>
+            <p>Automated test frameworks in Python and C/C++ for InfiniBand and Ethernet adapters. Performance benchmarking and root-cause analysis with driver teams.</p>
+          </div>
+        </li>
+        <li class="aside">
+          <span class="when">2025 – 2026</span>
+          <div>
+            <h3>Part-time Lecturer <span class="where">Arab American University</span></h3>
+            <p>Taught undergraduate Big Data Analytics: distributed systems, data engineering and predictive analytics, with hands-on cloud projects. Mentored students on applied AI research.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="education">
+        <h3>Education</h3>
+        <p><strong>M.Sc. Data Science &amp; Business Analytics</strong>, Arab American University, 2025. GPA 4.0 / 4.0.</p>
+        <p><strong>B.Sc. Computer Engineering</strong>, An-Najah National University, 2015.</p>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="block" data-state="3" aria-labelledby="research-title">
+      <div class="block-head">
+        <h2 id="research-title">Research</h2>
+        <p>Multimodal models and NLP, mostly aimed at one question: can a smaller model see well enough to act in time?</p>
+      </div>
+      <ul class="papers">
+        <li>
+          <a href="https://arxiv.org/abs/2502.20572" target="_blank" rel="noopener">HazardNet: a small-scale vision language model for real-time traffic safety detection at edge devices</a>
+          <span>arXiv preprint, 2025</span>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/scholar?q=Vision-Language+Models+for+Autonomous+Driving%3A+CLIP-Based+Dynamic+Scene+Understanding" target="_blank" rel="noopener">Vision-language models for autonomous driving: CLIP-based dynamic scene understanding</a>
+          <span>Electronics 14(7), 2025</span>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/scholar?q=Using+multimodal+large+language+models+(MLLMs)+for+automated+detection+of+traffic+safety-critical+events" target="_blank" rel="noopener">Using multimodal large language models for automated detection of traffic safety-critical events</a>
+          <span>Vehicles 6(3), 2024</span>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/scholar?q=Transformer-based+approach+to+pathology+diagnosis+using+audio+spectrogram" target="_blank" rel="noopener">Transformer-based approach to pathology diagnosis using audio spectrogram</a>
+          <span>Information 15(5), 2024</span>
+        </li>
+        <li>
+          <a href="https://scholar.google.com/scholar?q=Automated+question+generation+for+science+tests+in+arabic+language+using+nlp+techniques" target="_blank" rel="noopener">Automated question generation for science tests in Arabic using NLP techniques</a>
+          <span>ICISBC, Springer, 2024</span>
+        </li>
+      </ul>
+
+      <div class="stack">
+        <h3>Working toolkit</h3>
+        <dl>
+          <div><dt>AI</dt><dd>LLM integration, RAG, AI agents, vector databases, semantic search, Hugging Face, prompt engineering</dd></div>
+          <div><dt>Backend</dt><dd>Python, TypeScript, FastAPI, Django, Node.js, Laravel, microservices</dd></div>
+          <div><dt>Cloud</dt><dd>AWS (ECS, Lambda, RDS, S3, SageMaker), Docker, Kubernetes, GitHub Actions, Jenkins</dd></div>
+          <div><dt>Data</dt><dd>Apache Spark, Kafka, Snowflake, Rivery, ETL/ELT, streaming, SQL optimisation</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" data-state="4" aria-labelledby="contact-title">
+      <h2 id="contact-title">Have a model that needs to reach production?</h2>
+      <p>I'm open to senior AI leadership roles, relocation included, and to focused consulting engagements.</p>
+      <a class="contact-mail" href="mailto:mabutame@gmail.com">mabutame@gmail.com</a>
+      <ul class="contact-links">
+        <li><a href="https://linkedin.com/in/mtami" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/mtami" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://scholar.google.com/scholar?q=Mohammad+Abu+Tami" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="assets/Mo-Tami-CV.pdf" download>CV (PDF)</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Built by hand with Three.js. Made in Palestine.</p>
+    <button class="motion-toggle" type="button" aria-pressed="false">Pause the field</button>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
